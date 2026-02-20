@@ -1,0 +1,141 @@
+--------------------------------------------------------------------------------
+General Report
+Output from C:\Users\dcame\Downloads\Proyecto P1.V8.mod
+Date: Feb/19/2026   Time: 07:39:33 PM
+--------------------------------------------------------------------------------
+Scenario        : Normal Run
+Replication     : 1 of 1
+Simulation Time : 120 hr
+--------------------------------------------------------------------------------
+
+
+LOCATIONS
+
+                                                     Average                                      
+Location             Scheduled              Total    Minutes   Average   Maximum   Current        
+Name                     Hours  Capacity  Entries  Per Entry  Contents  Contents  Contents  % Util
+-------------------  ---------  --------  -------  ---------  --------  --------  --------  ------
+Almacen                    120        50       81    1471.02     16.54        34        34   33.10
+Recepcion                  120         1       47     153.00      0.99         1         1   99.88
+Inspeccion                 120         1      464      15.39      0.99         1         1   99.24
+SMT Motherboard            120         1      437      16.35      0.99         1         1   99.29
+Carga software.1           120         1      874       8.12      0.98         1         1   98.68
+Carga software.2           120         1      873       8.13      0.98         1         1   98.68
+Carga software             240         2     1747       8.13      0.98         2         2   98.68
+Ensamble pantalla          120         1     1745       4.01      0.97         1         1   97.41
+Instalacion interna        120         1     1744       4.02      0.97         1         1   97.39
+Sellado bateria            120         1     1743       4.01      0.97         1         1   97.23
+Cierre tornilleria         120         1     1742       4.02      0.97         1         1   97.29
+Pruebas estres.1           120         1      871       8.14      0.98         1         1   98.52
+Pruebas estres.2           120         1      870       8.14      0.98         1         1   98.48
+Pruebas estres             240         2     1741       8.14      0.98         2         2   98.50
+Control calidad            120         1     1739       3.08      0.74         1         1   74.56
+Retrabajo                  120         1       89      15.01      0.18         1         0   18.56
+Limpieza pulido            120         2     1715       3.13      0.74         2         1   37.30
+Empaque final              120         5      857      19.17      2.28         5         2   45.65
+Salida                     120         5      171      88.24      2.09         5         1   41.91
+
+
+LOCATION STATES BY PERCENTAGE (Multiple Capacity)
+
+                                           %        |     
+Location         Scheduled      %  Partially      % |    %
+Name                 Hours  Empty   Occupied   Full | Down
+---------------  ---------  -----  ---------  ----- | ----
+Almacen                120   2.03      97.97   0.00 | 0.00
+Limpieza pulido        120  37.29      50.80  11.90 | 0.00
+Empaque final          120  14.18      79.88   5.94 | 0.00
+Salida                 120  18.26      79.38   2.36 | 0.00
+
+
+LOCATION STATES BY PERCENTAGE (Single Capacity/Tanks)
+
+Location             Scheduled          %      %      %        %        %     %
+Name                     Hours  Operation  Setup   Idle  Waiting  Blocked  Down
+-------------------  ---------  ---------  -----  -----  -------  -------  ----
+Recepcion                  120       1.31   0.00   0.12     0.00    98.57  0.00
+Inspeccion                 120       6.44   0.00   0.76     0.00    92.80  0.00
+SMT Motherboard            120       3.03   0.00   0.71     0.00    96.26  0.00
+Carga software.1           120      48.53   0.00   1.32     0.00    50.15  0.00
+Carga software.2           120      48.50   0.00   1.32     0.00    50.18  0.00
+Carga software             240      48.52   0.00   1.32     0.00    50.16  0.00
+Ensamble pantalla          120      36.35   0.00   2.59     0.00    61.06  0.00
+Instalacion interna        120      72.66   0.00   2.61     0.00    24.73  0.00
+Sellado bateria            120      29.05   0.00   2.77     0.00    68.18  0.00
+Cierre tornilleria         120      36.29   0.00   2.71     0.00    61.00  0.00
+Pruebas estres.1           120      96.70   0.00   1.48     0.00     1.82  0.00
+Pruebas estres.2           120      96.66   0.00   1.52     0.00     1.82  0.00
+Pruebas estres             240      96.68   0.00   1.50     0.00     1.82  0.00
+Control calidad            120      72.45   0.00  25.44     0.00     2.11  0.00
+Retrabajo                  120      18.54   0.00  81.44     0.00     0.02  0.00
+
+
+FAILED ARRIVALS
+
+Entity            Location   Total
+Name              Name      Failed
+----------------  --------  ------
+Caja componentes  Almacen        0
+
+
+ENTITY ACTIVITY
+
+                                      Average  Average    Average    Average  Average
+                             Current  Minutes  Minutes    Minutes    Minutes  Minutes
+Entity              Total   Quantity       In  In Move   Wait For         In         
+Name                Exits  In System   System    Logic  Res, etc.  Operation  Blocked
+------------------  -----  ---------  -------  -------  ---------  ---------  -------
+Caja componentes        0         35        -        -          -          -        -
+Kit componentes         0          2        -        -          -          -        -
+Kit roto               26          0  1418.15     0.20       0.00       7.00  1410.95
+Placa base              0          2        -        -          -          -        -
+Placa programada        0          1        -        -          -          -        -
+Cuerpo celular          0          1        -        -          -          -        -
+Celular interno         0          1        -        -          -          -        -
+Celular energizado      0          1        -        -          -          -        -
+Celular completo        0          3        -        -          -          -        -
+Celular aprobado     1714          1  1589.15     1.10       2.13      30.27  1555.63
+Celular falla          23          0  1287.15     1.10       0.00      44.70  1241.35
+Par celulares         855          2    17.79     0.10      16.69       1.00     0.00
+Caja celulares        170          1    86.24     0.10      83.64       2.50     0.00
+Lote celulares         34          0     5.00     0.00       0.00       5.00     0.00
+
+
+ENTITY STATES BY PERCENTAGE
+
+                          %          %                       
+Entity              In Move   Wait For             %        %
+Name                  Logic  Res, etc.  In Operation  Blocked
+------------------  -------  ---------  ------------  -------
+Caja componentes          -          -             -        -
+Kit componentes           -          -             -        -
+Kit roto               0.01       0.00          0.49    99.49
+Placa base                -          -             -        -
+Placa programada          -          -             -        -
+Cuerpo celular            -          -             -        -
+Celular interno           -          -             -        -
+Celular energizado        -          -             -        -
+Celular completo          -          -             -        -
+Celular aprobado       0.07       0.13          1.91    97.89
+Celular falla          0.09       0.00          3.47    96.44
+Par celulares          0.56      93.82          5.62     0.00
+Caja celulares         0.12      96.99          2.90     0.00
+Lote celulares         0.00       0.00        100.00     0.00
+
+
+VARIABLES
+
+                                    Average                                    
+Variable                  Total     Minutes  Minimum  Maximum  Current  Average
+Name                    Changes  Per Change    Value    Value    Value    Value
+----------------------  -------  ----------  -------  -------  -------  -------
+num kitcomponentes          490       14.66        0      438      438   219.89
+rechazos                     23      295.68        0       23       23    13.78
+celulares retrabajados       66      108.59        0       66       66    31.12
+celulares terminados         34      210.14        0     1700     1700   823.96
+rechazos kit                 26      256.90        0       26       26    14.11
+celulares aprobados        1749        4.11        0       53       15    26.33
+celulares fallidos          155       46.24        0       24       23    13.97
+
+
+
